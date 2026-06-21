@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Zorp's Time-Taco Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+    <header>
+        <h1>🚀 Professor Zorp's Time-Taco Academy 🌮</h1>
+        <p class="subtitle">
+            Save the future by fixing educational glitches caused by taco-powered robots.
+        </p>
+    </header>
+
+    <div class="game-info">
+        <div>⭐ Score: <span id="score">0</span></div>
+        <div>❤️ Lives: <span id="lives">3</span></div>
+        <div>⏱ Time: <span id="timer">120</span></div>
+    </div>
+
+    <div class="character-box">
+        <h2 id="character">Professor Zorp</h2>
+        <p id="dialogue">
+            Welcome, cadet! A giant taco exploded in the Quantum Cafeteria. Learning has escaped into space!
+        </p>
+    </div>
+
+    <div class="question-box">
+
+        <h2 id="category">Mission Ready</h2>
+
+        <div id="question">
+            Press Start Mission to begin.
+        </div>
+
+        <div id="answers" class="answers"></div>
+
+    </div>
+
+    <div class="controls">
+        <button id="startBtn">Start Mission</button>
+        <button id="nextBtn" disabled>Next Question</button>
+    </div>
+
+    <div class="instructions">
+        <h3>How To Play</h3>
+        <ul>
+            <li>Answer questions before time runs out.</li>
+            <li>Gain points for correct answers.</li>
+            <li>Lose lives for incorrect answers.</li>
+            <li>Survive 2 minutes and earn the title of Galactic Genius.</li>
+        </ul>
+    </div>
+
+    <div id="message"></div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
